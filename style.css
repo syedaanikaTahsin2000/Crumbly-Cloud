@@ -26,6 +26,16 @@
     justify-content: space-around;
     align-items: center;
   }
+  .btn {
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+  }
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
   /* reset code and common ends here  */
 
 /* navbar starts here  */
@@ -43,6 +53,7 @@
     left: 0;
     z-index: 100;
   }
+  
   .nav-upper {
     min-height: 10vh;
     background-color: var(--primary-color);
@@ -56,14 +67,16 @@ gap: 2rem;
   }
   .nav__list:hover {
     text-decoration: overline;
-    color: black;
+    color: rgb(200, 203, 138);
   }
   .nav__link {
     color: white;
     transition: var(--transition);
+    text-shadow: 2px 3px rgb(48, 37, 40);
+
   }
   .nav__link:hover {
-    color: black;
+    color: rgb(215, 197, 211);
   }
   .profile-icon {
     width: 3rem;
@@ -89,6 +102,7 @@ gap: 2rem;
   }
   .nav__brand {
     font-size: 2rem;
+    text-shadow: 3px 4px rgb(82, 46, 76);
   }
   /* navbar ends here  */
   @media (max-width: 992px) {
@@ -106,3 +120,25 @@ gap: 2rem;
     .hidden {
       display: none;
     }}  
+
+
+
+
+
+    /* footer starts here  */
+.footer {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  min-height: 10vh;
+  color: white;
+  font-size: 1.1rem;
+}
+.btn-subscribe {
+  margin-left: -5px;
+}
+.footer__input {
+  border: none;
+  padding: var(--padding);
+  width: 20rem;
+}
+/* footer ends here  */
