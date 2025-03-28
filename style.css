@@ -35,11 +35,45 @@
   }
   .btn:hover {
     background-color: var(--secondary-color);
+    color: aliceblue;
   }
   .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .card {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+  }
+  .card:hover {
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 1);
+  }
+  .hr-design {
+    margin: 0.5rem 0;
+  }
+  .dot {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .vanila {
+    background-color: rgb(233, 229, 229);
+    border: var(--secondary-color) 1px double;
+  }
+  .chocolate {
+    background-color: rgb(104, 58, 26);
+    border: var(--secondary-color) 1px double;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .section-title {
+    font-size: 2rem;
   }
   /* reset code and common ends here  */
 
@@ -189,3 +223,70 @@ gap: 2rem;
   .header {
     height: 100vh;
   }}
+  /* main starts here  */
+main {
+  padding: 4rem 0;
+  min-height: 80vh;
+}
+.sidebar {
+  flex: 1;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-self: flex-start;
+}
+.main-content {
+  flex: 3;
+  padding: var(--padding);
+}
+.actions__sort select {
+  padding: var(--padding);
+}
+.actions__search input {
+  padding: var(--padding);
+
+  width: 15rem;
+}
+.actions__search button {
+  margin-left: -0.3rem;
+  border: 1px solid;
+  padding: 0.55rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.product {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  z-index: 10;
+}
+.product__img {
+  width: 100%;
+  height: 15rem;
+  
+  transition: var(--transition);
+}
+
+.product__body {
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.learn-more {
+  color: green;
+}
