@@ -289,11 +289,116 @@ main {
   border-style: solid;
 }
 /* pagination ends here  */
+/* prodcut details starts here  */
+.product__details-left {
+  flex: 1;
+}
+.product__details-left img {
+  height: 20rem;
+  width: 30rem;
+}
+.product__details-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* prodcut details ends here  */
+/* cart design starts here  */
+.cart {
+  padding: var(--padding);
+  gap: 1rem;
+}
+.cart .card {
+  margin-bottom: 1rem;
+}
+.cart__items {
+  flex: 1;
+}
+.cart__items-action {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__item input {
+  flex: 0.1;
+}
+.cart__item-img {
+  flex: 0.2;
+  width: 15rem;
+  height: 10rem;
+}
+.cart__item-description {
+  flex: 0.4;
+}
+.cart__item-shipping {
+  margin-top: 0.5rem;
+  color: red;
+}
+.cart__item-actions {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cart__payment {
+  flex: 1;
+}
+.cart__payment-summary > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.cart__payment-btn {
+  width: 100%;
+}
+.cart__payment-methods > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.cart__payment-methods > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* cart design ends here  */
+/* profile starts here  */
+.profile {
+  flex-direction: column;
+  gap: 3rem;
+}
+.profile .card {
+  padding: var(--padding);
+  width: 30rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile__img {
+  width: 15vw;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.profile__buttons button {
+  background-color: transparent;
+}
+/* profile ends here  */
 @media (max-width: 992px) {
   .flex-space-around {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
+  }
+  .cart{
+
+    flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
   }
   #menu-icon {
     display: block;
@@ -309,7 +414,12 @@ main {
   }
   .products {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }}
+  }
+  .cart__items,
+  .cart__payment {
+    width: 90%;
+  }
+  }
   @media (max-width: 768px) {
     .flex-center {
       flex-direction: column;
@@ -320,3 +430,14 @@ main {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
+  @media (max-width: 1058px) {
+    .product-details{
+
+
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+  
+  
+    }
+    }
